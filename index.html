@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My page</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad()</script>
 </head>
 
 <body>
@@ -60,17 +63,23 @@
     <section>
       <div id="private">
         <h2>
-          About me
+          About me  
         </h2>
         <p>
           I am 27 years old. I'm living in Minsk.I like active rest, I play the guitar.I want to be cool front-end
           development! I have little development skills at the moment. In my free time I study the front-end. I wish to
           become not a bad developer in one year.I know English at the level A2.I have a higher pedagogical education.
         </p>
+        <pre><code class="html">const findSquares = (num) => {
+        const divided = num / 2;
+        let max = Math.pow(Math.ceil(divided), 2);
+        let min = Math.pow(Math.floor(divided), 2);
+        return `${max}-${min}`}
+        console.log(findSquares(11));</code></pre>
         <div class="flex-center">
-          <img class="photo" src="img/guitar.jpg" alt="my photo" />
-          <img class="photo" src="img/parachute.jpg" alt="my photo" />
-          <img class="photo" src="img/me.JPEG" alt="my photo" />
+         <a href="https://roman-93.github.io/human-readable-number/"><img class="photo" src="img/guitar.jpg" alt="my photo" /></a>
+         <a href="https://roman-93.github.io/Project/"><img class="photo" src="img/parachute.jpg" alt="my photo" /></a>
+         <a href=""><img class="photo" src="img/me.JPEG" alt="my photo" /></a>
         </div>
       </div>
     </section>
